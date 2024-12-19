@@ -467,15 +467,17 @@
         <div class="container-send">
           <p class="send-label">Subscribe</p>
           <form class="input-button-container">
-            <input
-              type="email"
-              class="subscribe-email"
-              name="subscribe-input"
-              placeholder="E-mail"
-            />
+            <label class="label-subscribe">
+              <input
+                type="email"
+                class="subscribe-email"
+                name="subscribe-input"
+                placeholder="E-mail"
+              />
+            </label>
             <button type="submit" class="subscribe">
               Subscribe
-              <svg class="subscribe-icon" width="24" height="20">
+              <svg class="subscribe-icon" width="24" height="24">
                 <use href="./images/icons.svg#icon-send"></use>
               </svg>
             </button>
@@ -484,7 +486,7 @@
       </div>
     </footer>
 
-    <div class="backdrop is-open">
+    <div class="backdrop">
       <div class="modal">
         <button type="button" class="close-button">
           <svg class="modal-icon" width="8" height="8">
@@ -500,7 +502,7 @@
                 class="form-input"
                 type="text"
                 id="user-name"
-                name="form-name"
+                name="user-name"
                 required
               />
               <svg class="form-icon" width="18" height="24">
@@ -552,7 +554,7 @@
               class="checkbox-privacy visually-hidden"
               type="checkbox"
               name="user-privacy"
-              id="puser-privacy"
+              id="user-privacy"
               value="true"
               required
             />
